@@ -111,8 +111,8 @@ me.say_hi()
 ## 📈 Profile Summary &nbsp;<sup>
 
 <!-- PROFILE-STATS-START -->
-| 📦 Public Repos | ⭐ Total Stars | 🍴 Total Forks | 👥 Followers | 🕐 Last Updated |
-|:-:|:-:|:-:|:-:|:-:|
+| 📦 Public Repos | 👥 Followers | 🕐 Last Updated |
+|:-:|:-:|:-:|
 | **5** | **0** | **0** | **0** | 2026-04-23 04:29 UTC |
 <!-- PROFILE-STATS-END -->
 
