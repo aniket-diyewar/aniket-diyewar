@@ -17,7 +17,7 @@ class AniketDiyewar:
         self.role        = "Student @ RBU, Nagpur"
         self.focus       = "Healthcare AI, Medical Imaging & Electronic"
         self.location    = "Nagpur, Maharashtra, India 🇮🇳"
-\       self.currently   = "Building Healthcare AI systems that save lives"
+        self.currently   = "Building Healthcare AI systems that save lives"
         connect    = "https://linkedin.com/in/aniket-diyewar"
 
     def say_hi(self):
@@ -64,13 +64,13 @@ me.say_hi()
 ## 🚀 My Projects &nbsp;
 
 <!-- REPOS-START -->
-| Project | Description | Language | ⭐ Stars | 🍴 Forks | Last Push |
-|---------|-------------|----------|---------|---------|-----------|
-| [Medical-Image-Enhancement](https://github.com/aniket-diyewar/Medical-Image-Enhancement) | Medical Image Enhancement System using OpenCV to improve diagnostic clarity in medical images through noise reduction and edge detection techniques. | 🐍 Python | ⭐ 0 | 🍴 0 | 1mo ago |
-| [Dr_Moddel](https://github.com/aniket-diyewar/Dr_Moddel) | Multi-phase Deep Learning model for Diabetic Retinopathy detection using EfficientNet-B3 with preprocessing, augmentation, and Grad-CAM visualization. | 🐍 Python | ⭐ 0 | 🍴 0 | 2w ago |
-| [ICU-Mortality-LHS](https://github.com/aniket-diyewar/ICU-Mortality-LHS) | A continuous Learning Health System (LHS) prototype for ICU mortality prediction using XGBoost and SHAP. | 🐍 Python | ⭐ 0 | 🍴 0 | 1w ago |
-| [Growth-Tracker](https://github.com/aniket-diyewar/Growth-Tracker) | A modern productivity web app to track daily study goals, focus sessions, and progress with analytics. | 💙 TypeScript | ⭐ 0 | 🍴 0 | 2w ago |
-| [aniket-diyewar](https://github.com/aniket-diyewar/aniket-diyewar) | — | 🐍 Python | ⭐ 0 | 🍴 0 | today |
+| Project | Description | Language | Last Push |
+|---------|-------------|----------|-----------|
+| [Medical-Image-Enhancement](https://github.com/aniket-diyewar/Medical-Image-Enhancement) | Medical Image Enhancement System using OpenCV to improve diagnostic clarity in medical images through noise reduction and edge detection techniques. | 🐍 Python | 1mo ago |
+| [Dr_Moddel](https://github.com/aniket-diyewar/Dr_Moddel) | Multi-phase Deep Learning model for Diabetic Retinopathy detection using EfficientNet-B3 with preprocessing, augmentation, and Grad-CAM visualization. | 🐍 Python |  2w ago |
+| [ICU-Mortality-LHS](https://github.com/aniket-diyewar/ICU-Mortality-LHS) | A continuous Learning Health System (LHS) prototype for ICU mortality prediction using XGBoost and SHAP. | 🐍 Python  | 1w ago |
+| [Growth-Tracker](https://github.com/aniket-diyewar/Growth-Tracker) | A modern productivity web app to track daily study goals, focus sessions, and progress with analytics. | 💙 TypeScript  | 2w ago |
+| [aniket-diyewar](https://github.com/aniket-diyewar/aniket-diyewar) | — | 🐍 Python |today |
 <!-- REPOS-END -->
 
 ---
