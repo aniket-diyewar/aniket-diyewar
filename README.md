@@ -66,7 +66,11 @@ me.say_hi()
 <!-- REPOS-START -->
 | Project | Description | Language | ⭐ Stars | 🍴 Forks | Last Push |
 |---------|-------------|----------|---------|---------|-----------|
-| placeholder | placeholder | placeholder | 0 | 0 | — |
+| [Medical-Image-Enhancement](https://github.com/aniket-diyewar/Medical-Image-Enhancement) | Medical Image Enhancement System using OpenCV to improve diagnostic clarity in medical images through noise reduction and edge detection techniques. | 🐍 Python | ⭐ 0 | 🍴 0 | 1mo ago |
+| [Dr_Moddel](https://github.com/aniket-diyewar/Dr_Moddel) | Multi-phase Deep Learning model for Diabetic Retinopathy detection using EfficientNet-B3 with preprocessing, augmentation, and Grad-CAM visualization. | 🐍 Python | ⭐ 0 | 🍴 0 | 2w ago |
+| [ICU-Mortality-LHS](https://github.com/aniket-diyewar/ICU-Mortality-LHS) | A continuous Learning Health System (LHS) prototype for ICU mortality prediction using XGBoost and SHAP. | 🐍 Python | ⭐ 0 | 🍴 0 | 1w ago |
+| [Growth-Tracker](https://github.com/aniket-diyewar/Growth-Tracker) | A modern productivity web app to track daily study goals, focus sessions, and progress with analytics. | 💙 TypeScript | ⭐ 0 | 🍴 0 | 2w ago |
+| [aniket-diyewar](https://github.com/aniket-diyewar/aniket-diyewar) | — | 🐍 Python | ⭐ 0 | 🍴 0 | today |
 <!-- REPOS-END -->
 
 ---
@@ -74,7 +78,16 @@ me.say_hi()
 ## 📅 Recent Activity &nbsp;
 
 <!-- ACTIVITY-START -->
-_Waiting for first workflow run…_
+- 🔨 Pushed to [aniket-diyewar/aniket-diyewar](https://github.com/aniket-diyewar/aniket-diyewar) `main` (0 commits) — _today_
+- 🔨 Pushed to [aniket-diyewar/aniket-diyewar](https://github.com/aniket-diyewar/aniket-diyewar) `main` (0 commits) — _today_
+- 🔨 Pushed to [aniket-diyewar/aniket-diyewar](https://github.com/aniket-diyewar/aniket-diyewar) `main` (0 commits) — _today_
+- 🔨 Pushed to [aniket-diyewar/aniket-diyewar](https://github.com/aniket-diyewar/aniket-diyewar) `main` (0 commits) — _today_
+- 🔨 Pushed to [aniket-diyewar/aniket-diyewar](https://github.com/aniket-diyewar/aniket-diyewar) `main` (0 commits) — _today_
+- 🔨 Pushed to [aniket-diyewar/aniket-diyewar](https://github.com/aniket-diyewar/aniket-diyewar) `main` (0 commits) — _today_
+- ✨ Created [aniket-diyewar/aniket-diyewar](https://github.com/aniket-diyewar/aniket-diyewar) — _16h ago_
+- 🔨 Pushed to [aniket-diyewar/ICU-Mortality-LHS](https://github.com/aniket-diyewar/ICU-Mortality-LHS) `main` (0 commits) — _1w ago_
+- 🔨 Pushed to [aniket-diyewar/ICU-Mortality-LHS](https://github.com/aniket-diyewar/ICU-Mortality-LHS) `main` (0 commits) — _1w ago_
+- 🔨 Pushed to [aniket-diyewar/ICU-Mortality-LHS](https://github.com/aniket-diyewar/ICU-Mortality-LHS) `main` (0 commits) — _1w ago_
 <!-- ACTIVITY-END -->
 
 ---
@@ -100,7 +113,7 @@ _Waiting for first workflow run…_
 <!-- PROFILE-STATS-START -->
 | 📦 Public Repos | ⭐ Total Stars | 🍴 Total Forks | 👥 Followers | 🕐 Last Updated |
 |:-:|:-:|:-:|:-:|:-:|
-| — | — | — | — | — |
+| **5** | **0** | **0** | **0** | 2026-04-23 04:28 UTC |
 <!-- PROFILE-STATS-END -->
 
 ---
