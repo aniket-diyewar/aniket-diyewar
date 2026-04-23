@@ -2,16 +2,9 @@
 update_readme.py
 ----------------
 Fetches live data from the GitHub REST API and rewrites
-the four auto-update zones in README.md:
+the four auto-update zones in README.md.
 
-    <!-- REPOS-START --> … <!-- REPOS-END -->
-    <!-- ACTIVITY-START --> … <!-- ACTIVITY-END -->
-    <!-- PROFILE-STATS-START --> … <!-- PROFILE-STATS-END -->
-
-Run manually:
-    python scripts/update_readme.py
-
-Or let GitHub Actions call it on a schedule (see .github/workflows/update-readme.yml).
+Note: Stars and Forks columns have been removed from the Repos section.
 """
 
 import os
@@ -26,7 +19,7 @@ GITHUB_USERNAME = "aniket-diyewar"
 README_PATH     = "README.md"
 API_BASE        = "https://api.github.com"
 
-# Repos to always feature (in this order). Others get appended sorted by push date.
+# Repos to always feature (in this order)
 PINNED_REPOS = [
     "Medical-Image-Enhancement",
     "Dr_Moddel",
@@ -47,7 +40,6 @@ LANG_EMOJI = {
 # ── Helpers ───────────────────────────────────────────────────────────────────
 
 def gh_get(path: str) -> dict | list:
-    """Call GitHub REST API. Uses GITHUB_TOKEN if set (higher rate limit)."""
     token = os.environ.get("GITHUB_TOKEN", "")
     url   = f"{API_BASE}{path}"
     req   = request.Request(url, headers={
@@ -66,9 +58,7 @@ def gh_get(path: str) -> dict | list:
         print(f"⚠️  Network error for {url}: {exc}")
         return {}
 
-
 def relative_time(iso: str) -> str:
-    """Return a human-friendly relative timestamp, e.g. '3 days ago'."""
     if not iso:
         return "—"
     dt    = datetime.fromisoformat(iso.replace("Z", "+00:00"))
@@ -87,29 +77,23 @@ def relative_time(iso: str) -> str:
         return f"{days // 30}mo ago"
     return f"{days // 365}y ago"
 
-
 def replace_section(content: str, tag: str, new_body: str) -> str:
-    """Replace content between <!-- TAG-START --> and <!-- TAG-END --> markers."""
-    pattern = rf"(<!-- {tag}-START -->).*?(<!-- {tag}-END -->)"
+    pattern = rf"().*?()"
     replacement = rf"\1\n{new_body}\n\2"
     result, n = re.subn(pattern, replacement, content, flags=re.DOTALL)
     if n == 0:
-        print(f"⚠️  Marker <!-- {tag}-START/END --> not found in README – skipping.")
+        print(f"⚠️  Marker not found in README.")
     return result
-
 
 # ── Section builders ──────────────────────────────────────────────────────────
 
 def build_repos_section() -> str:
-    """Fetch all public repos and build a markdown table sorted by pinned order then push date."""
+    """Builds the projects table WITHOUT Stars and Forks."""
     all_repos: list[dict] = gh_get(f"/users/{GITHUB_USERNAME}/repos?per_page=100&type=public")
     if not all_repos or isinstance(all_repos, dict):
         return "_⚠️ Could not fetch repositories._"
 
-    # Index by name for quick lookup
     by_name = {r["name"]: r for r in all_repos}
-
-    # Build ordered list: pinned first, then the rest sorted by pushed_at desc
     ordered = []
     seen    = set()
     for name in PINNED_REPOS:
@@ -124,9 +108,10 @@ def build_repos_section() -> str:
     )
     ordered.extend(rest)
 
+    # Updated Headers: Removed Stars and Forks
     rows = [
-        "| Project | Description | Language | ⭐ Stars | 🍴 Forks | Last Push |",
-        "|---------|-------------|----------|---------|---------|-----------|",
+        "| Project | Description | Language | Last Push |",
+        "|---------|-------------|----------|-----------|",
     ]
     for repo in ordered:
         name      = repo["name"]
@@ -134,18 +119,16 @@ def build_repos_section() -> str:
         desc      = (repo.get("description") or "—").replace("|", "\\|")
         lang      = repo.get("language") or "—"
         emoji     = LANG_EMOJI.get(lang, "📁")
-        stars     = repo.get("stargazers_count", 0)
-        forks     = repo.get("forks_count", 0)
         pushed    = relative_time(repo.get("pushed_at", ""))
+        
+        # Updated Row: Removed star/fork data points
         rows.append(
-            f"| [{name}]({url}) | {desc} | {emoji} {lang} | ⭐ {stars} | 🍴 {forks} | {pushed} |"
+            f"| [{name}]({url}) | {desc} | {emoji} {lang} | {pushed} |"
         )
 
     return "\n".join(rows)
 
-
 def build_activity_section() -> str:
-    """Fetch the 10 most recent public events and format them as a list."""
     events: list[dict] = gh_get(f"/users/{GITHUB_USERNAME}/events/public?per_page=10")
     if not events or isinstance(events, dict):
         return "_⚠️ Could not fetch activity._"
@@ -171,8 +154,6 @@ def build_activity_section() -> str:
         rurl    = f"https://github.com/{rname}"
         created = relative_time(ev.get("created_at", ""))
         label   = TYPE_LABELS.get(etype, f"🔔 {etype} in")
-
-        # Extra detail for push events (branch + commit count)
         extra = ""
         if etype == "PushEvent":
             payload = ev.get("payload", {})
@@ -184,9 +165,7 @@ def build_activity_section() -> str:
 
     return "\n".join(lines) if lines else "_No recent public activity._"
 
-
 def build_profile_stats_section() -> str:
-    """Fetch user profile + aggregate star/fork counts."""
     user: dict = gh_get(f"/users/{GITHUB_USERNAME}")
     if not user or "login" not in user:
         return "_⚠️ Could not fetch profile stats._"
@@ -204,7 +183,6 @@ def build_profile_stats_section() -> str:
         f"| **{pub_repos}** | **{total_stars}** | **{total_forks}** | **{followers}** | {updated_at} |"
     )
 
-
 # ── Main ──────────────────────────────────────────────────────────────────────
 
 def main():
@@ -213,27 +191,17 @@ def main():
         with open(README_PATH, "r", encoding="utf-8") as f:
             content = f.read()
     except FileNotFoundError:
-        sys.exit(f"❌  {README_PATH} not found. Run this script from the repo root.")
+        sys.exit(f"❌  {README_PATH} not found.")
 
-    print("🌐  Fetching repos …")
-    repos_md = build_repos_section()
-
-    print("🌐  Fetching activity …")
-    activity_md = build_activity_section()
-
-    print("🌐  Fetching profile stats …")
-    stats_md = build_profile_stats_section()
-
-    print("✏️   Updating README sections …")
-    content = replace_section(content, "REPOS",         repos_md)
-    content = replace_section(content, "ACTIVITY",      activity_md)
-    content = replace_section(content, "PROFILE-STATS", stats_md)
+    print("🌐  Updating zones (Stars/Forks removed from Projects) …")
+    content = replace_section(content, "REPOS",         build_repos_section())
+    content = replace_section(content, "ACTIVITY",      build_activity_section())
+    content = replace_section(content, "PROFILE-STATS", build_profile_stats_section())
 
     with open(README_PATH, "w", encoding="utf-8") as f:
         f.write(content)
 
     print("✅  README updated successfully!")
-
 
 if __name__ == "__main__":
     main()
