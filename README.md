@@ -65,12 +65,12 @@ me.say_hi()
 
 <!-- REPOS-START -->
 | Project | Description | Language | Last Push |
-|---------|-------------|----------|-----------|
-| [Medical-Image-Enhancement](https://github.com/aniket-diyewar/Medical-Image-Enhancement) | Medical Image Enhancement System using OpenCV to improve diagnostic clarity in medical images through noise reduction and edge detection techniques. | 🐍 Python | 1mo ago |
-| [Dr_Moddel](https://github.com/aniket-diyewar/Dr_Moddel) | Multi-phase Deep Learning model for Diabetic Retinopathy detection using EfficientNet-B3 with preprocessing, augmentation, and Grad-CAM visualization. | 🐍 Python |  2w ago |
-| [ICU-Mortality-LHS](https://github.com/aniket-diyewar/ICU-Mortality-LHS) | A continuous Learning Health System (LHS) prototype for ICU mortality prediction using XGBoost and SHAP. | 🐍 Python  | 1w ago |
-| [Growth-Tracker](https://github.com/aniket-diyewar/Growth-Tracker) | A modern productivity web app to track daily study goals, focus sessions, and progress with analytics. | 💙 TypeScript  | 2w ago |
-| [aniket-diyewar](https://github.com/aniket-diyewar/aniket-diyewar) | — | 🐍 Python |today |
+|---|---|---|---|
+| [Medical-Image-Enhancement](https://github.com/aniket-diyewar/Medical-Image-Enhancement) | Medical Image Enhancement System using OpenCV to improve diagnostic clarity in medical images through noise reduction and edge detection techniques. | 🐍 Python | 2mo ago |
+| [Dr_Moddel](https://github.com/aniket-diyewar/Dr_Moddel) | Multi-phase Deep Learning model for Diabetic Retinopathy detection using EfficientNet-B3 with preprocessing, augmentation, and Grad-CAM visualization. | 🐍 Python | 3w ago |
+| [ICU-Mortality-LHS](https://github.com/aniket-diyewar/ICU-Mortality-LHS) | A continuous Learning Health System (LHS) prototype for ICU mortality prediction using XGBoost and SHAP. | 🐍 Python | 2w ago |
+| [Growth-Tracker](https://github.com/aniket-diyewar/Growth-Tracker) | A modern productivity web app to track daily study goals, focus sessions, and progress with analytics. | 💙 TypeScript | 4w ago |
+| [aniket-diyewar](https://github.com/aniket-diyewar/aniket-diyewar) | — | 🐍 Python | today |
 <!-- REPOS-END -->
 
 ---
@@ -78,16 +78,14 @@ me.say_hi()
 ## 📅 Recent Activity &nbsp;
 
 <!-- ACTIVITY-START -->
-- 🔨 Pushed to [aniket-diyewar/aniket-diyewar](https://github.com/aniket-diyewar/aniket-diyewar) `main` (0 commits) — _today_
-- 🔨 Pushed to [aniket-diyewar/aniket-diyewar](https://github.com/aniket-diyewar/aniket-diyewar) `main` (0 commits) — _today_
-- 🔨 Pushed to [aniket-diyewar/aniket-diyewar](https://github.com/aniket-diyewar/aniket-diyewar) `main` (0 commits) — _today_
-- 🔨 Pushed to [aniket-diyewar/aniket-diyewar](https://github.com/aniket-diyewar/aniket-diyewar) `main` (0 commits) — _today_
-- 🔨 Pushed to [aniket-diyewar/aniket-diyewar](https://github.com/aniket-diyewar/aniket-diyewar) `main` (0 commits) — _today_
-- 🔨 Pushed to [aniket-diyewar/aniket-diyewar](https://github.com/aniket-diyewar/aniket-diyewar) `main` (0 commits) — _today_
-- 🔨 Pushed to [aniket-diyewar/aniket-diyewar](https://github.com/aniket-diyewar/aniket-diyewar) `main` (0 commits) — _today_
-- ✨ Created [aniket-diyewar/aniket-diyewar](https://github.com/aniket-diyewar/aniket-diyewar) — _16h ago_
-- 🔨 Pushed to [aniket-diyewar/ICU-Mortality-LHS](https://github.com/aniket-diyewar/ICU-Mortality-LHS) `main` (0 commits) — _1w ago_
-- 🔨 Pushed to [aniket-diyewar/ICU-Mortality-LHS](https://github.com/aniket-diyewar/ICU-Mortality-LHS) `main` (0 commits) — _1w ago_
+- 🔨 Pushed to [aniket-diyewar/aniket-diyewar](https://github.com/aniket-diyewar/aniket-diyewar) — _today_
+- 🔨 Pushed to [aniket-diyewar/aniket-diyewar](https://github.com/aniket-diyewar/aniket-diyewar) — _today_
+- 🔨 Pushed to [aniket-diyewar/aniket-diyewar](https://github.com/aniket-diyewar/aniket-diyewar) — _today_
+- 🔨 Pushed to [aniket-diyewar/aniket-diyewar](https://github.com/aniket-diyewar/aniket-diyewar) — _1w ago_
+- 🔨 Pushed to [aniket-diyewar/aniket-diyewar](https://github.com/aniket-diyewar/aniket-diyewar) — _1w ago_
+- 🔨 Pushed to [aniket-diyewar/aniket-diyewar](https://github.com/aniket-diyewar/aniket-diyewar) — _1w ago_
+- 🔨 Pushed to [aniket-diyewar/aniket-diyewar](https://github.com/aniket-diyewar/aniket-diyewar) — _1w ago_
+- 🔨 Pushed to [aniket-diyewar/aniket-diyewar](https://github.com/aniket-diyewar/aniket-diyewar) — _1w ago_
 <!-- ACTIVITY-END -->
 
 ---
@@ -111,9 +109,9 @@ me.say_hi()
 ## 📈 Profile Summary &nbsp;<sup>
 
 <!-- PROFILE-STATS-START -->
-| 📦 Public Repos | 👥 Followers | 🕐 Last Updated |
+| 📦 Repos | 👥 Followers | 🕐 Last Updated |
 |:-:|:-:|:-:|
-| **5** | **0** | **0** | **0** | 2026-04-23 04:29 UTC |
+| **5** | **0** | 2026-05-01 04:14 UTC |
 <!-- PROFILE-STATS-END -->
 
 ---
