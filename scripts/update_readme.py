@@ -60,10 +60,12 @@ def relative_time(iso: str) -> str:
         return "—"
 
 def replace_section(content: str, tag: str, new_body: str) -> str:
-    # This regex looks for <!-- REPOS:START --> and <!-- REPOS:END -->
-    pattern = rf"(<!-- {tag}:START -->).*?(<!-- {tag}:END -->)"
+    # Aapke README mein tags <!-- REPOS-START --> format mein hain
+    pattern = rf"(<!-- {tag}-START -->).*?(<!-- {tag}-END -->)"
     replacement = rf"\1\n{new_body}\n\2"
     result, n = re.subn(pattern, replacement, content, flags=re.DOTALL)
+    if n == 0:
+        print(f"⚠️  Marker {tag} not found in README.")
     return result
 
 # ── Section builders ──────────────────────────────────────────────────────────
