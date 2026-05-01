@@ -1,65 +1,48 @@
 name: 🔄 Auto-Update README
 
-# ── Triggers ─────────────────────────────────────────────────────────────────
 on:
-  # 1. Run every day at 00:00 UTC (6:00 AM IST)
   schedule:
-    - cron: "0 0 * * *"
-
-  # 2. Run whenever you push to main (instant update)
+    - cron: "0 0 * * *" # Har din subah 6:00 AM IST
   push:
     branches: [main]
-
-  # 3. Run when any of your OTHER repos push (cross-repo trigger)
-  #    Set up a webhook or repository_dispatch from those repos to fire this.
   repository_dispatch:
     types: [repo-updated]
-
-  # 4. Allow manual trigger from the GitHub Actions tab
   workflow_dispatch:
 
-# ── Permissions ───────────────────────────────────────────────────────────────
 permissions:
-  contents: write   # needed to commit & push the updated README
+  contents: write
 
-# ── Jobs ─────────────────────────────────────────────────────────────────────
 jobs:
   update-readme:
     name: Refresh README
     runs-on: ubuntu-latest
 
     steps:
-      # ── 1. Check out the profile repo ──────────────────────────────────────
       - name: ⬇️ Checkout
         uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
 
-      # ── 2. Set up Python ───────────────────────────────────────────────────
       - name: 🐍 Set up Python 3.12
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
-      # ── 3. Run the updater script ──────────────────────────────────────────
-      #    GITHUB_TOKEN is passed so API rate limits are higher (5000/hr vs 60/hr)
+      - name: 📦 Install Requests
+        run: pip install requests
+
       - name: 🚀 Update README
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/update_readme.py
 
-      # ── 4. Commit & push only if README actually changed ───────────────────
-      - name: 💾 Commit changes
+      - name: 💾 Commit & Push
         run: |
-          git config --global user.name  "github-actions[bot]"
+          git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add README.md
-          # Exit 0 even if nothing changed (git diff returns 1 when clean)
-          git diff --staged --quiet && echo "✅ No changes – README is already up to date." || \
-          git commit -m "chore(readme): auto-update [$(date -u '+%Y-%m-%d %H:%M UTC')]"
-
-      - name: 📤 Push
-        uses: ad-m/github-push-action@v0.8.0
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: main
+          # Agar kuch change hua hai tabhi commit aur push karega
+          if git diff --staged --quiet; then
+            echo "✅ No changes detected."
+          else
+            git commit -m "chore(readme): auto-update [$(date -u '+%Y-%m-%d %H:%M UTC')]"
+            git push origin main
+          fi
