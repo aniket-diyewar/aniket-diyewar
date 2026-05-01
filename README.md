@@ -92,11 +92,6 @@ me.say_hi()
 
 ## 📊 GitHub Stats
 
-<div align="center">
-
-<img height="200em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=aniket-diyewar&layout=compact&langs_count=6&theme=tokyonight&hide_border=true"/>
-
-</div>
 
 <div align="center">
 
