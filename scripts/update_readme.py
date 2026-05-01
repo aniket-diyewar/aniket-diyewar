@@ -108,11 +108,16 @@ def build_activity_section() -> str:
             lines.append(f"- 🔨 Pushed to [{rname}](https://github.com/{rname}) — _{created}_")
     return "\n".join(lines) if lines else "_No recent activity._"
 
+from datetime import datetime, timedelta, timezone
+
 def build_profile_stats_section() -> str:
     user = gh_get(f"/users/{GITHUB_USERNAME}")
     if not user or "login" not in user: return ""
     
-    updated_at = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    # UTC se IST (+5:30) convert karne ke liye
+    ist_now = datetime.now(timezone.utc) + timedelta(hours=5, minutes=30)
+    updated_at = ist_now.strftime("%Y-%m-%d %I:%M %p IST") # Example: 2026-05-01 09:44 AM IST
+
     return (f"| 📦 Repos | 👥 Followers | 🕐 Last Updated |\n"
             f"|:-:|:-:|:-:|\n"
             f"| **{user.get('public_repos', 0)}** | **{user.get('followers', 0)}** | {updated_at} |")
