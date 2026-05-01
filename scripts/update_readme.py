@@ -1,12 +1,3 @@
-"""
-update_readme.py
-----------------
-Fetches live data from the GitHub REST API and rewrites
-the four auto-update zones in README.md.
-
-Note: Stars and Forks columns have been removed from the Repos section.
-"""
-
 import os
 import re
 import sys
@@ -19,7 +10,7 @@ GITHUB_USERNAME = "aniket-diyewar"
 README_PATH     = "README.md"
 API_BASE        = "https://api.github.com"
 
-# Repos to always feature (in this order)
+# Repos to always feature
 PINNED_REPOS = [
     "Medical-Image-Enhancement",
     "Dr_Moddel",
@@ -27,7 +18,6 @@ PINNED_REPOS = [
     "Growth-Tracker",
 ]
 
-# Emoji map by primary language
 LANG_EMOJI = {
     "Python":     "🐍",
     "TypeScript": "💙",
@@ -49,159 +39,100 @@ def gh_get(path: str) -> dict | list:
         **({"Authorization": f"Bearer {token}"} if token else {}),
     })
     try:
+        # Timeout strictly set to 15 seconds to prevent hanging
         with request.urlopen(req, timeout=15) as resp:
             return json.loads(resp.read().decode())
-    except error.HTTPError as exc:
-        print(f"⚠️  GitHub API {exc.code} for {url}: {exc.reason}")
-        return {}
     except Exception as exc:
-        print(f"⚠️  Network error for {url}: {exc}")
+        print(f"⚠️ Error fetching {url}: {exc}")
         return {}
 
 def relative_time(iso: str) -> str:
-    if not iso:
-        return "—"
-    dt    = datetime.fromisoformat(iso.replace("Z", "+00:00"))
-    delta = datetime.now(timezone.utc) - dt
-    days  = delta.days
-    if days == 0:
-        hours = delta.seconds // 3600
-        return "today" if hours == 0 else f"{hours}h ago"
-    if days == 1:
-        return "yesterday"
-    if days < 7:
-        return f"{days} days ago"
-    if days < 30:
-        return f"{days // 7}w ago"
-    if days < 365:
+    if not iso: return "—"
+    try:
+        dt = datetime.fromisoformat(iso.replace("Z", "+00:00"))
+        delta = datetime.now(timezone.utc) - dt
+        days = delta.days
+        if days == 0: return "today"
+        if days < 7: return f"{days}d ago"
+        if days < 30: return f"{days // 7}w ago"
         return f"{days // 30}mo ago"
-    return f"{days // 365}y ago"
+    except:
+        return "—"
 
 def replace_section(content: str, tag: str, new_body: str) -> str:
-    pattern = rf"().*?()"
+    # This regex looks for <!-- REPOS:START --> and <!-- REPOS:END -->
+    pattern = rf"(<!-- {tag}:START -->).*?(<!-- {tag}:END -->)"
     replacement = rf"\1\n{new_body}\n\2"
     result, n = re.subn(pattern, replacement, content, flags=re.DOTALL)
-    if n == 0:
-        print(f"⚠️  Marker not found in README.")
     return result
 
 # ── Section builders ──────────────────────────────────────────────────────────
 
 def build_repos_section() -> str:
-    """Builds the projects table WITHOUT Stars and Forks."""
-    all_repos: list[dict] = gh_get(f"/users/{GITHUB_USERNAME}/repos?per_page=100&type=public")
-    if not all_repos or isinstance(all_repos, dict):
+    all_repos = gh_get(f"/users/{GITHUB_USERNAME}/repos?per_page=100&type=public")
+    if not all_repos or not isinstance(all_repos, list):
         return "_⚠️ Could not fetch repositories._"
 
     by_name = {r["name"]: r for r in all_repos}
-    ordered = []
-    seen    = set()
-    for name in PINNED_REPOS:
-        if name in by_name:
-            ordered.append(by_name[name])
-            seen.add(name)
+    ordered = [by_name[name] for name in PINNED_REPOS if name in by_name]
+    
+    seen = set(PINNED_REPOS)
+    rest = sorted([r for r in all_repos if r["name"] not in seen],
+                  key=lambda r: r.get("pushed_at") or "", reverse=True)
+    ordered.extend(rest[:6]) # Show top 6 other repos
 
-    rest = sorted(
-        [r for r in all_repos if r["name"] not in seen],
-        key=lambda r: r.get("pushed_at") or "",
-        reverse=True,
-    )
-    ordered.extend(rest)
-
-    # Updated Headers: Removed Stars and Forks
-    rows = [
-        "| Project | Description | Language | Last Push |",
-        "|---------|-------------|----------|-----------|",
-    ]
+    rows = ["| Project | Description | Language | Last Push |", "|---|---|---|---|"]
     for repo in ordered:
-        name      = repo["name"]
-        url       = repo["html_url"]
-        desc      = (repo.get("description") or "—").replace("|", "\\|")
-        lang      = repo.get("language") or "—"
-        emoji     = LANG_EMOJI.get(lang, "📁")
-        pushed    = relative_time(repo.get("pushed_at", ""))
-        
-        # Updated Row: Removed star/fork data points
-        rows.append(
-            f"| [{name}]({url}) | {desc} | {emoji} {lang} | {pushed} |"
-        )
+        name, url = repo["name"], repo["html_url"]
+        desc = (repo.get("description") or "—").replace("|", "\\|")
+        lang = repo.get("language") or "—"
+        emoji = LANG_EMOJI.get(lang, "📁")
+        pushed = relative_time(repo.get("pushed_at", ""))
+        rows.append(f"| [{name}]({url}) | {desc} | {emoji} {lang} | {pushed} |")
 
     return "\n".join(rows)
 
 def build_activity_section() -> str:
-    events: list[dict] = gh_get(f"/users/{GITHUB_USERNAME}/events/public?per_page=10")
-    if not events or isinstance(events, dict):
-        return "_⚠️ Could not fetch activity._"
-
-    TYPE_LABELS = {
-        "PushEvent":              "🔨 Pushed to",
-        "CreateEvent":            "✨ Created",
-        "PullRequestEvent":       "🔀 Pull request in",
-        "IssuesEvent":            "🐛 Opened issue in",
-        "WatchEvent":             "⭐ Starred",
-        "ForkEvent":              "🍴 Forked",
-        "IssueCommentEvent":      "💬 Commented in",
-        "PullRequestReviewEvent": "👀 Reviewed PR in",
-        "ReleaseEvent":           "🚀 Released in",
-        "DeleteEvent":            "🗑️ Deleted from",
-    }
+    events = gh_get(f"/users/{GITHUB_USERNAME}/events/public?per_page=10")
+    if not events or not isinstance(events, list):
+        return "_No recent activity found._"
 
     lines = []
-    for ev in events:
-        etype   = ev.get("type", "")
-        repo    = ev.get("repo", {})
-        rname   = repo.get("name", "—")
-        rurl    = f"https://github.com/{rname}"
+    for ev in events[:8]:
+        etype = ev.get("type", "")
+        rname = ev.get("repo", {}).get("name", "—")
         created = relative_time(ev.get("created_at", ""))
-        label   = TYPE_LABELS.get(etype, f"🔔 {etype} in")
-        extra = ""
         if etype == "PushEvent":
-            payload = ev.get("payload", {})
-            ref     = payload.get("ref", "").replace("refs/heads/", "")
-            commits = len(payload.get("commits", []))
-            extra   = f" `{ref}` ({commits} commit{'s' if commits != 1 else ''})"
-
-        lines.append(f"- {label} [{rname}]({rurl}){extra} — _{created}_")
-
-    return "\n".join(lines) if lines else "_No recent public activity._"
+            lines.append(f"- 🔨 Pushed to [{rname}](https://github.com/{rname}) — _{created}_")
+    return "\n".join(lines) if lines else "_No recent activity._"
 
 def build_profile_stats_section() -> str:
-    user: dict = gh_get(f"/users/{GITHUB_USERNAME}")
-    if not user or "login" not in user:
-        return "_⚠️ Could not fetch profile stats._"
-
-    repos: list[dict] = gh_get(f"/users/{GITHUB_USERNAME}/repos?per_page=100&type=public")
-    total_stars = sum(r.get("stargazers_count", 0) for r in (repos if isinstance(repos, list) else []))
-    total_forks = sum(r.get("forks_count",       0) for r in (repos if isinstance(repos, list) else []))
-    followers   = user.get("followers", 0)
-    pub_repos   = user.get("public_repos", 0)
-    updated_at  = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
-
-    return (
-        "| 📦 Public Repos | ⭐ Total Stars | 🍴 Total Forks | 👥 Followers | 🕐 Last Updated |\n"
-        "|:-:|:-:|:-:|:-:|:-:|\n"
-        f"| **{pub_repos}** | **{total_stars}** | **{total_forks}** | **{followers}** | {updated_at} |"
-    )
+    user = gh_get(f"/users/{GITHUB_USERNAME}")
+    if not user or "login" not in user: return ""
+    
+    updated_at = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    return (f"| 📦 Repos | 👥 Followers | 🕐 Last Updated |\n"
+            f"|:-:|:-:|:-:|\n"
+            f"| **{user.get('public_repos', 0)}** | **{user.get('followers', 0)}** | {updated_at} |")
 
 # ── Main ──────────────────────────────────────────────────────────────────────
 
 def main():
-    print(f"📖  Reading {README_PATH} …")
-    try:
-        with open(README_PATH, "r", encoding="utf-8") as f:
-            content = f.read()
-    except FileNotFoundError:
-        sys.exit(f"❌  {README_PATH} not found.")
+    if not os.path.exists(README_PATH):
+        print(f"❌ {README_PATH} not found")
+        return
 
-    print("🌐  Updating zones (Stars/Forks removed from Projects) …")
-    content = replace_section(content, "REPOS",         build_repos_section())
-    content = replace_section(content, "ACTIVITY",      build_activity_section())
+    with open(README_PATH, "r", encoding="utf-8") as f:
+        content = f.read()
+
+    print("🌐 Updating README zones...")
+    content = replace_section(content, "REPOS", build_repos_section())
+    content = replace_section(content, "ACTIVITY", build_activity_section())
     content = replace_section(content, "PROFILE-STATS", build_profile_stats_section())
 
     with open(README_PATH, "w", encoding="utf-8") as f:
         f.write(content)
-
-    print("✅  README updated successfully!")
+    print("✅ Done!")
 
 if __name__ == "__main__":
     main()
