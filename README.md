@@ -69,7 +69,7 @@ me.say_hi()
 | [Medical-Image-Enhancement](https://github.com/aniket-diyewar/Medical-Image-Enhancement) | Medical Image Enhancement System using OpenCV to improve diagnostic clarity in medical images through noise reduction and edge detection techniques. | 🐍 Python | 2mo ago |
 | [Dr_Moddel](https://github.com/aniket-diyewar/Dr_Moddel) | Multi-phase Deep Learning model for Diabetic Retinopathy detection using EfficientNet-B3 with preprocessing, augmentation, and Grad-CAM visualization. | 🐍 Python | 4w ago |
 | [ICU-Mortality-LHS](https://github.com/aniket-diyewar/ICU-Mortality-LHS) | A continuous Learning Health System (LHS) prototype for ICU mortality prediction using XGBoost and SHAP. | 🐍 Python | 2w ago |
-| [Growth-Tracker](https://github.com/aniket-diyewar/Growth-Tracker) | A modern productivity web app to track daily study goals, focus sessions, and progress with analytics. | 💙 TypeScript | 4w ago |
+| [Growth-Tracker](https://github.com/aniket-diyewar/Growth-Tracker) | A modern productivity web app to track daily study goals, focus sessions, and progress with analytics. | 💙 TypeScript | 1mo ago |
 | [aniket-diyewar](https://github.com/aniket-diyewar/aniket-diyewar) | — | 🐍 Python | 1d ago |
 <!-- REPOS-END -->
 
@@ -78,11 +78,11 @@ me.say_hi()
 ## 📅 Recent Activity &nbsp;
 
 <!-- ACTIVITY-START -->
-- 🔨 Pushed to [aniket-diyewar/aniket-diyewar](https://github.com/aniket-diyewar/aniket-diyewar) — _1d ago_
-- 🔨 Pushed to [aniket-diyewar/aniket-diyewar](https://github.com/aniket-diyewar/aniket-diyewar) — _1d ago_
-- 🔨 Pushed to [aniket-diyewar/aniket-diyewar](https://github.com/aniket-diyewar/aniket-diyewar) — _1d ago_
-- 🔨 Pushed to [aniket-diyewar/aniket-diyewar](https://github.com/aniket-diyewar/aniket-diyewar) — _1d ago_
-- 🔨 Pushed to [aniket-diyewar/aniket-diyewar](https://github.com/aniket-diyewar/aniket-diyewar) — _1d ago_
+- 🔨 Pushed to [aniket-diyewar/aniket-diyewar](https://github.com/aniket-diyewar/aniket-diyewar) — _2d ago_
+- 🔨 Pushed to [aniket-diyewar/aniket-diyewar](https://github.com/aniket-diyewar/aniket-diyewar) — _2d ago_
+- 🔨 Pushed to [aniket-diyewar/aniket-diyewar](https://github.com/aniket-diyewar/aniket-diyewar) — _2d ago_
+- 🔨 Pushed to [aniket-diyewar/aniket-diyewar](https://github.com/aniket-diyewar/aniket-diyewar) — _2d ago_
+- 🔨 Pushed to [aniket-diyewar/aniket-diyewar](https://github.com/aniket-diyewar/aniket-diyewar) — _2d ago_
 - 🔨 Pushed to [aniket-diyewar/aniket-diyewar](https://github.com/aniket-diyewar/aniket-diyewar) — _1w ago_
 - 🔨 Pushed to [aniket-diyewar/aniket-diyewar](https://github.com/aniket-diyewar/aniket-diyewar) — _1w ago_
 - 🔨 Pushed to [aniket-diyewar/aniket-diyewar](https://github.com/aniket-diyewar/aniket-diyewar) — _1w ago_
@@ -106,7 +106,7 @@ me.say_hi()
 <!-- PROFILE-STATS-START -->
 | 📦 Repos | 👥 Followers | 🕐 Last Updated |
 |:-:|:-:|:-:|
-| **5** | **0** | 2026-05-03 07:26 AM IST |
+| **5** | **0** | 2026-05-04 07:27 AM IST |
 <!-- PROFILE-STATS-END -->
 
 ---
