@@ -70,10 +70,10 @@ me.say_hi()
 | [Dr_Moddel](https://github.com/aniket-diyewar/Dr_Moddel) | Multi-phase Deep Learning model for Diabetic Retinopathy detection using EfficientNet-B3 with preprocessing, augmentation, and Grad-CAM visualization. | 🐍 Python | 1mo ago |
 | [ICU-Mortality-LHS](https://github.com/aniket-diyewar/ICU-Mortality-LHS) | A continuous Learning Health System (LHS) prototype for ICU mortality prediction using XGBoost and SHAP. | 🐍 Python | 1mo ago |
 | [Growth-Tracker](https://github.com/aniket-diyewar/Growth-Tracker) | A modern productivity web app to track daily study goals, focus sessions, and progress with analytics. | 💙 TypeScript | 1mo ago |
-| [aniket-diyewar](https://github.com/aniket-diyewar/aniket-diyewar) | — | 🐍 Python | 1d ago |
-| [hospital_management_system](https://github.com/aniket-diyewar/hospital_management_system) | — | 🟨 JavaScript | 1d ago |
-| [hospital-backend](https://github.com/aniket-diyewar/hospital-backend) | — | 📁 Java | 2d ago |
-| [hospital-frontend](https://github.com/aniket-diyewar/hospital-frontend) | — | 🟨 JavaScript | 2d ago |
+| [aniket-diyewar](https://github.com/aniket-diyewar/aniket-diyewar) | — | 🐍 Python | today |
+| [hospital_management_system](https://github.com/aniket-diyewar/hospital_management_system) | — | 🟨 JavaScript | 2d ago |
+| [hospital-backend](https://github.com/aniket-diyewar/hospital-backend) | — | 📁 Java | 3d ago |
+| [hospital-frontend](https://github.com/aniket-diyewar/hospital-frontend) | — | 🟨 JavaScript | 3d ago |
 <!-- REPOS-END -->
 
 ---
@@ -81,12 +81,12 @@ me.say_hi()
 ## 📅 Recent Activity &nbsp;
 
 <!-- ACTIVITY-START -->
-- 🔨 Pushed to [aniket-diyewar/hospital_management_system](https://github.com/aniket-diyewar/hospital_management_system) — _1d ago_
-- 🔨 Pushed to [aniket-diyewar/hospital-backend](https://github.com/aniket-diyewar/hospital-backend) — _2d ago_
-- 🔨 Pushed to [aniket-diyewar/hospital-frontend](https://github.com/aniket-diyewar/hospital-frontend) — _2d ago_
-- 🔨 Pushed to [aniket-diyewar/hospital-backend](https://github.com/aniket-diyewar/hospital-backend) — _2d ago_
-- 🔨 Pushed to [aniket-diyewar/hospital-frontend](https://github.com/aniket-diyewar/hospital-frontend) — _2d ago_
-- 🔨 Pushed to [aniket-diyewar/hospital-frontend](https://github.com/aniket-diyewar/hospital-frontend) — _2d ago_
+- 🔨 Pushed to [aniket-diyewar/hospital_management_system](https://github.com/aniket-diyewar/hospital_management_system) — _2d ago_
+- 🔨 Pushed to [aniket-diyewar/hospital-backend](https://github.com/aniket-diyewar/hospital-backend) — _3d ago_
+- 🔨 Pushed to [aniket-diyewar/hospital-frontend](https://github.com/aniket-diyewar/hospital-frontend) — _3d ago_
+- 🔨 Pushed to [aniket-diyewar/hospital-backend](https://github.com/aniket-diyewar/hospital-backend) — _3d ago_
+- 🔨 Pushed to [aniket-diyewar/hospital-frontend](https://github.com/aniket-diyewar/hospital-frontend) — _3d ago_
+- 🔨 Pushed to [aniket-diyewar/hospital-frontend](https://github.com/aniket-diyewar/hospital-frontend) — _3d ago_
 <!-- ACTIVITY-END -->
 
 ---
@@ -107,7 +107,7 @@ me.say_hi()
 <!-- PROFILE-STATS-START -->
 | 📦 Repos | 👥 Followers | 🕐 Last Updated |
 |:-:|:-:|:-:|
-| **8** | **1** | 2026-05-29 07:42 AM IST |
+| **8** | **1** | 2026-05-30 07:38 AM IST |
 <!-- PROFILE-STATS-END -->
 
 ---
