@@ -67,13 +67,10 @@ me.say_hi()
 | Project | Description | Language | Last Push |
 |---|---|---|---|
 | [Medical-Image-Enhancement](https://github.com/aniket-diyewar/Medical-Image-Enhancement) | Medical Image Enhancement System using OpenCV to improve diagnostic clarity in medical images through noise reduction and edge detection techniques. | 🐍 Python | 3mo ago |
-| [Dr_Moddel](https://github.com/aniket-diyewar/Dr_Moddel) | Multi-phase Deep Learning model for Diabetic Retinopathy detection using EfficientNet-B3 with preprocessing, augmentation, and Grad-CAM visualization. | 🐍 Python | 1mo ago |
+| [Dr_Moddel](https://github.com/aniket-diyewar/Dr_Moddel) | Multi-phase Deep Learning model for Diabetic Retinopathy detection using EfficientNet-B3 with preprocessing, augmentation, and Grad-CAM visualization. | 🐍 Python | 2mo ago |
 | [ICU-Mortality-LHS](https://github.com/aniket-diyewar/ICU-Mortality-LHS) | A continuous Learning Health System (LHS) prototype for ICU mortality prediction using XGBoost and SHAP. | 🐍 Python | 1mo ago |
-| [Growth-Tracker](https://github.com/aniket-diyewar/Growth-Tracker) | A modern productivity web app to track daily study goals, focus sessions, and progress with analytics. | 💙 TypeScript | 2mo ago |
-| [aniket-diyewar](https://github.com/aniket-diyewar/aniket-diyewar) | — | 🐍 Python | 1d ago |
-| [hospital_management_system](https://github.com/aniket-diyewar/hospital_management_system) | — | 🟨 JavaScript | 6d ago |
-| [hospital-backend](https://github.com/aniket-diyewar/hospital-backend) | — | 📁 Java | 1w ago |
-| [hospital-frontend](https://github.com/aniket-diyewar/hospital-frontend) | — | 🟨 JavaScript | 1w ago |
+| [Growth-Tracker](https://github.com/aniket-diyewar/Growth-Tracker) | A modern productivity web app to track daily study goals, focus sessions, and progress with analytics. | 💙 TypeScript | today |
+| [aniket-diyewar](https://github.com/aniket-diyewar/aniket-diyewar) | — | 🐍 Python | today |
 <!-- REPOS-END -->
 
 ---
@@ -81,12 +78,14 @@ me.say_hi()
 ## 📅 Recent Activity &nbsp;
 
 <!-- ACTIVITY-START -->
-- 🔨 Pushed to [aniket-diyewar/hospital_management_system](https://github.com/aniket-diyewar/hospital_management_system) — _6d ago_
-- 🔨 Pushed to [aniket-diyewar/hospital-backend](https://github.com/aniket-diyewar/hospital-backend) — _1w ago_
-- 🔨 Pushed to [aniket-diyewar/hospital-frontend](https://github.com/aniket-diyewar/hospital-frontend) — _1w ago_
-- 🔨 Pushed to [aniket-diyewar/hospital-backend](https://github.com/aniket-diyewar/hospital-backend) — _1w ago_
-- 🔨 Pushed to [aniket-diyewar/hospital-frontend](https://github.com/aniket-diyewar/hospital-frontend) — _1w ago_
-- 🔨 Pushed to [aniket-diyewar/hospital-frontend](https://github.com/aniket-diyewar/hospital-frontend) — _1w ago_
+- 🔨 Pushed to [aniket-diyewar/Growth-Tracker](https://github.com/aniket-diyewar/Growth-Tracker) — _today_
+- 🔨 Pushed to [aniket-diyewar/Growth-Tracker](https://github.com/aniket-diyewar/Growth-Tracker) — _today_
+- 🔨 Pushed to [aniket-diyewar/Growth-Tracker](https://github.com/aniket-diyewar/Growth-Tracker) — _today_
+- 🔨 Pushed to [aniket-diyewar/Growth-Tracker](https://github.com/aniket-diyewar/Growth-Tracker) — _today_
+- 🔨 Pushed to [aniket-diyewar/Growth-Tracker](https://github.com/aniket-diyewar/Growth-Tracker) — _today_
+- 🔨 Pushed to [aniket-diyewar/Growth-Tracker](https://github.com/aniket-diyewar/Growth-Tracker) — _today_
+- 🔨 Pushed to [aniket-diyewar/Growth-Tracker](https://github.com/aniket-diyewar/Growth-Tracker) — _today_
+- 🔨 Pushed to [aniket-diyewar/Growth-Tracker](https://github.com/aniket-diyewar/Growth-Tracker) — _today_
 <!-- ACTIVITY-END -->
 
 ---
@@ -107,7 +106,7 @@ me.say_hi()
 <!-- PROFILE-STATS-START -->
 | 📦 Repos | 👥 Followers | 🕐 Last Updated |
 |:-:|:-:|:-:|
-| **8** | **1** | 2026-06-03 08:19 AM IST |
+| **5** | **1** | 2026-06-04 08:14 AM IST |
 <!-- PROFILE-STATS-END -->
 
 ---
