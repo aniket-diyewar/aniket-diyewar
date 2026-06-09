@@ -69,8 +69,8 @@ me.say_hi()
 | [Medical-Image-Enhancement](https://github.com/aniket-diyewar/Medical-Image-Enhancement) | Medical Image Enhancement System using OpenCV to improve diagnostic clarity in medical images through noise reduction and edge detection techniques. | 🐍 Python | 3mo ago |
 | [Dr_Moddel](https://github.com/aniket-diyewar/Dr_Moddel) | Multi-phase Deep Learning model for Diabetic Retinopathy detection using EfficientNet-B3 with preprocessing, augmentation, and Grad-CAM visualization. | 🐍 Python | 2mo ago |
 | [ICU-Mortality-LHS](https://github.com/aniket-diyewar/ICU-Mortality-LHS) | A continuous Learning Health System (LHS) prototype for ICU mortality prediction using XGBoost and SHAP. | 🐍 Python | 1mo ago |
-| [Growth-Tracker](https://github.com/aniket-diyewar/Growth-Tracker) | A modern productivity web app to track daily study goals, focus sessions, and progress with analytics. | 💙 TypeScript | 4d ago |
-| [aniket-diyewar](https://github.com/aniket-diyewar/aniket-diyewar) | — | 🐍 Python | 1d ago |
+| [Growth-Tracker](https://github.com/aniket-diyewar/Growth-Tracker) | A modern productivity web app to track daily study goals, focus sessions, and progress with analytics. | 💙 TypeScript | 5d ago |
+| [aniket-diyewar](https://github.com/aniket-diyewar/aniket-diyewar) | — | 🐍 Python | today |
 <!-- REPOS-END -->
 
 ---
@@ -78,14 +78,14 @@ me.say_hi()
 ## 📅 Recent Activity &nbsp;
 
 <!-- ACTIVITY-START -->
-- 🔨 Pushed to [aniket-diyewar/Growth-Tracker](https://github.com/aniket-diyewar/Growth-Tracker) — _4d ago_
-- 🔨 Pushed to [aniket-diyewar/Growth-Tracker](https://github.com/aniket-diyewar/Growth-Tracker) — _4d ago_
-- 🔨 Pushed to [aniket-diyewar/Growth-Tracker](https://github.com/aniket-diyewar/Growth-Tracker) — _4d ago_
-- 🔨 Pushed to [aniket-diyewar/Growth-Tracker](https://github.com/aniket-diyewar/Growth-Tracker) — _4d ago_
-- 🔨 Pushed to [aniket-diyewar/Growth-Tracker](https://github.com/aniket-diyewar/Growth-Tracker) — _4d ago_
-- 🔨 Pushed to [aniket-diyewar/Growth-Tracker](https://github.com/aniket-diyewar/Growth-Tracker) — _4d ago_
-- 🔨 Pushed to [aniket-diyewar/Growth-Tracker](https://github.com/aniket-diyewar/Growth-Tracker) — _4d ago_
-- 🔨 Pushed to [aniket-diyewar/Growth-Tracker](https://github.com/aniket-diyewar/Growth-Tracker) — _4d ago_
+- 🔨 Pushed to [aniket-diyewar/Growth-Tracker](https://github.com/aniket-diyewar/Growth-Tracker) — _5d ago_
+- 🔨 Pushed to [aniket-diyewar/Growth-Tracker](https://github.com/aniket-diyewar/Growth-Tracker) — _5d ago_
+- 🔨 Pushed to [aniket-diyewar/Growth-Tracker](https://github.com/aniket-diyewar/Growth-Tracker) — _5d ago_
+- 🔨 Pushed to [aniket-diyewar/Growth-Tracker](https://github.com/aniket-diyewar/Growth-Tracker) — _5d ago_
+- 🔨 Pushed to [aniket-diyewar/Growth-Tracker](https://github.com/aniket-diyewar/Growth-Tracker) — _5d ago_
+- 🔨 Pushed to [aniket-diyewar/Growth-Tracker](https://github.com/aniket-diyewar/Growth-Tracker) — _5d ago_
+- 🔨 Pushed to [aniket-diyewar/Growth-Tracker](https://github.com/aniket-diyewar/Growth-Tracker) — _5d ago_
+- 🔨 Pushed to [aniket-diyewar/Growth-Tracker](https://github.com/aniket-diyewar/Growth-Tracker) — _5d ago_
 <!-- ACTIVITY-END -->
 
 ---
@@ -106,7 +106,7 @@ me.say_hi()
 <!-- PROFILE-STATS-START -->
 | 📦 Repos | 👥 Followers | 🕐 Last Updated |
 |:-:|:-:|:-:|
-| **5** | **1** | 2026-06-08 08:11 AM IST |
+| **5** | **1** | 2026-06-09 07:37 AM IST |
 <!-- PROFILE-STATS-END -->
 
 ---
