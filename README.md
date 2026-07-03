@@ -71,7 +71,7 @@ me.say_hi()
 | [Growth-Tracker](https://github.com/aniket-diyewar/Growth-Tracker) | A modern productivity web app to track daily study goals, focus sessions, and progress with analytics. | 💙 TypeScript | 4w ago |
 | [aniket-diyewar](https://github.com/aniket-diyewar/aniket-diyewar) | — | 🐍 Python | today |
 | [RailPulse](https://github.com/aniket-diyewar/RailPulse) | — | 🐍 Python | 2w ago |
-| [DR_Vision](https://github.com/aniket-diyewar/DR_Vision) | Multi-phase Deep Learning model for Diabetic Retinopathy detection using EfficientNet-B3 with preprocessing, augmentation, and Grad-CAM visualization. | 💙 TypeScript | 2w ago |
+| [DR_Vision](https://github.com/aniket-diyewar/DR_Vision) | Multi-phase Deep Learning model for Diabetic Retinopathy detection using EfficientNet-B3 with preprocessing, augmentation, and Grad-CAM visualization. | 💙 TypeScript | 3w ago |
 <!-- REPOS-END -->
 
 ---
@@ -81,9 +81,9 @@ me.say_hi()
 <!-- ACTIVITY-START -->
 - 🔨 Pushed to [aniket-diyewar/RailPulse](https://github.com/aniket-diyewar/RailPulse) — _2w ago_
 - 🔨 Pushed to [aniket-diyewar/RailPulse](https://github.com/aniket-diyewar/RailPulse) — _2w ago_
-- 🔨 Pushed to [aniket-diyewar/DR_Vision](https://github.com/aniket-diyewar/DR_Vision) — _2w ago_
-- 🔨 Pushed to [aniket-diyewar/DR_Vision](https://github.com/aniket-diyewar/DR_Vision) — _2w ago_
-- 🔨 Pushed to [aniket-diyewar/DR_Vision](https://github.com/aniket-diyewar/DR_Vision) — _2w ago_
+- 🔨 Pushed to [aniket-diyewar/DR_Vision](https://github.com/aniket-diyewar/DR_Vision) — _3w ago_
+- 🔨 Pushed to [aniket-diyewar/DR_Vision](https://github.com/aniket-diyewar/DR_Vision) — _3w ago_
+- 🔨 Pushed to [aniket-diyewar/DR_Vision](https://github.com/aniket-diyewar/DR_Vision) — _3w ago_
 - 🔨 Pushed to [aniket-diyewar/Growth-Tracker](https://github.com/aniket-diyewar/Growth-Tracker) — _4w ago_
 - 🔨 Pushed to [aniket-diyewar/Growth-Tracker](https://github.com/aniket-diyewar/Growth-Tracker) — _4w ago_
 <!-- ACTIVITY-END -->
@@ -106,7 +106,7 @@ me.say_hi()
 <!-- PROFILE-STATS-START -->
 | 📦 Repos | 👥 Followers | 🕐 Last Updated |
 |:-:|:-:|:-:|
-| **6** | **1** | 2026-07-02 07:45 AM IST |
+| **6** | **1** | 2026-07-03 07:29 AM IST |
 <!-- PROFILE-STATS-END -->
 
 ---
