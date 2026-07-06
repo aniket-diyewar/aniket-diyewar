@@ -70,7 +70,7 @@ me.say_hi()
 | [ICU-Mortality-LHS](https://github.com/aniket-diyewar/ICU-Mortality-LHS) | A continuous Learning Health System (LHS) prototype for ICU mortality prediction using XGBoost and SHAP. | 🐍 Python | 2mo ago |
 | [Growth-Tracker](https://github.com/aniket-diyewar/Growth-Tracker) | A modern productivity web app to track daily study goals, focus sessions, and progress with analytics. | 💙 TypeScript | 1mo ago |
 | [aniket-diyewar](https://github.com/aniket-diyewar/aniket-diyewar) | — | 🐍 Python | 1d ago |
-| [RailPulse](https://github.com/aniket-diyewar/RailPulse) | — | 🐍 Python | 2w ago |
+| [RailPulse](https://github.com/aniket-diyewar/RailPulse) | — | 🐍 Python | 3w ago |
 | [DR_Vision](https://github.com/aniket-diyewar/DR_Vision) | Multi-phase Deep Learning model for Diabetic Retinopathy detection using EfficientNet-B3 with preprocessing, augmentation, and Grad-CAM visualization. | 💙 TypeScript | 3w ago |
 <!-- REPOS-END -->
 
@@ -79,8 +79,8 @@ me.say_hi()
 ## 📅 Recent Activity &nbsp;
 
 <!-- ACTIVITY-START -->
-- 🔨 Pushed to [aniket-diyewar/RailPulse](https://github.com/aniket-diyewar/RailPulse) — _2w ago_
-- 🔨 Pushed to [aniket-diyewar/RailPulse](https://github.com/aniket-diyewar/RailPulse) — _2w ago_
+- 🔨 Pushed to [aniket-diyewar/RailPulse](https://github.com/aniket-diyewar/RailPulse) — _3w ago_
+- 🔨 Pushed to [aniket-diyewar/RailPulse](https://github.com/aniket-diyewar/RailPulse) — _3w ago_
 - 🔨 Pushed to [aniket-diyewar/DR_Vision](https://github.com/aniket-diyewar/DR_Vision) — _3w ago_
 - 🔨 Pushed to [aniket-diyewar/DR_Vision](https://github.com/aniket-diyewar/DR_Vision) — _3w ago_
 - 🔨 Pushed to [aniket-diyewar/DR_Vision](https://github.com/aniket-diyewar/DR_Vision) — _3w ago_
@@ -104,7 +104,7 @@ me.say_hi()
 <!-- PROFILE-STATS-START -->
 | 📦 Repos | 👥 Followers | 🕐 Last Updated |
 |:-:|:-:|:-:|
-| **6** | **1** | 2026-07-05 07:35 AM IST |
+| **6** | **1** | 2026-07-06 07:41 AM IST |
 <!-- PROFILE-STATS-END -->
 
 ---
