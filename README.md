@@ -70,7 +70,7 @@ me.say_hi()
 | [ICU-Mortality-LHS](https://github.com/aniket-diyewar/ICU-Mortality-LHS) | A continuous Learning Health System (LHS) prototype for ICU mortality prediction using XGBoost and SHAP. | 🐍 Python | 4mo ago |
 | [Growth-Tracker](https://github.com/aniket-diyewar/Growth-Tracker) | A modern productivity web app to track daily study goals, focus sessions, and progress with analytics. | 💙 TypeScript | 3mo ago |
 | [aniket-diyewar](https://github.com/aniket-diyewar/aniket-diyewar) | — | 🐍 Python | today |
-| [DR_Vision](https://github.com/aniket-diyewar/DR_Vision) | Multi-phase Deep Learning model for Diabetic Retinopathy detection using EfficientNet-B3 with preprocessing, augmentation, and Grad-CAM visualization. | 💙 TypeScript | 3w ago |
+| [DR_Vision](https://github.com/aniket-diyewar/DR_Vision) | Multi-phase Deep Learning model for Diabetic Retinopathy detection using EfficientNet-B3 with preprocessing, augmentation, and Grad-CAM visualization. | 💙 TypeScript | 4w ago |
 <!-- REPOS-END -->
 
 ---
@@ -78,7 +78,7 @@ me.say_hi()
 ## 📅 Recent Activity &nbsp;
 
 <!-- ACTIVITY-START -->
-- 🔨 Pushed to [aniket-diyewar/DR_Vision](https://github.com/aniket-diyewar/DR_Vision) — _3w ago_
+- 🔨 Pushed to [aniket-diyewar/DR_Vision](https://github.com/aniket-diyewar/DR_Vision) — _4w ago_
 <!-- ACTIVITY-END -->
 
 ---
@@ -99,7 +99,7 @@ me.say_hi()
 <!-- PROFILE-STATS-START -->
 | 📦 Repos | 👥 Followers | 🕐 Last Updated |
 |:-:|:-:|:-:|
-| **5** | **1** | 2026-09-10 07:37 AM IST |
+| **5** | **1** | 2026-09-11 07:34 AM IST |
 <!-- PROFILE-STATS-END -->
 
 ---
