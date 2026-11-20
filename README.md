@@ -69,8 +69,8 @@ me.say_hi()
 | [Medical-Image-Enhancement](https://github.com/aniket-diyewar/Medical-Image-Enhancement) | Medical Image Enhancement System using OpenCV to improve diagnostic clarity in medical images through noise reduction and edge detection techniques. | 🐍 Python | 8mo ago |
 | [ICU-Mortality-LHS](https://github.com/aniket-diyewar/ICU-Mortality-LHS) | A continuous Learning Health System (LHS) prototype for ICU mortality prediction using XGBoost and SHAP. | 🐍 Python | 7mo ago |
 | [Growth-Tracker](https://github.com/aniket-diyewar/Growth-Tracker) | A modern productivity web app to track daily study goals, focus sessions, and progress with analytics. | 💙 TypeScript | 5mo ago |
-| [DR_Vision](https://github.com/aniket-diyewar/DR_Vision) | AI-powered Diabetic Retinopathy detection using a fine-tuned EfficientNet-B0 model, with Grad-CAM explainability and a web-based screening interface. | 💙 TypeScript | today |
 | [aniket-diyewar](https://github.com/aniket-diyewar/aniket-diyewar) | — | 🐍 Python | today |
+| [DR_Vision](https://github.com/aniket-diyewar/DR_Vision) | AI-powered Diabetic Retinopathy detection using a fine-tuned EfficientNet-B0 model, with Grad-CAM explainability and a web-based screening interface. | 💙 TypeScript | 1d ago |
 <!-- REPOS-END -->
 
 ---
@@ -99,7 +99,7 @@ _No recent activity found._
 <!-- PROFILE-STATS-START -->
 | 📦 Repos | 👥 Followers | 🕐 Last Updated |
 |:-:|:-:|:-:|
-| **5** | **1** | 2026-11-19 10:33 AM IST |
+| **5** | **1** | 2026-11-20 10:23 AM IST |
 <!-- PROFILE-STATS-END -->
 
 ---
